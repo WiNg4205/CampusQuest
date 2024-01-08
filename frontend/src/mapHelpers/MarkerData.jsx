@@ -119,6 +119,36 @@ var markerData = [
       zLevel: 1,
       preventClickBubble: false 
     }
+  },
+  {
+    name: 'Stellini Pasta',
+    description: 'description',
+    imgUrl: 'stellini-icon.svg',
+    lngLat: {lng: 151.227875, lat: -33.915676},
+    options: {
+      imgUrl: 'stellini-logo.png',
+      imgScale: 1.2,
+      color: 'MazeGreen',
+      size: 50,
+      shape: 'marker',
+      zLevel: 1,
+      preventClickBubble: false 
+    }
+  },
+  {
+    name: 'Roundhouse',
+    description: 'description',
+    imgUrl: 'roundhouse-icon.svg',
+    lngLat: {lng: 151.226991, lat: -33.916650},
+    options: {
+      imgUrl: 'roundhouse-logo.png',
+      imgScale: 1,
+      color: 'MazeGreen',
+      size: 50,
+      shape: 'marker',
+      zLevel: 1,
+      preventClickBubble: false 
+    }
   }
 ];
 
