@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import markerData from './mapHelpers/MarkerData';
 import { addPopUp } from './mapHelpers/PopUp';
 import { inflateMarker, resetMarker, handleKeyDown } from './mapHelpers/MapUtil';
-import { setModeUpdateCallback } from './sidebarHelpers/LocationButton';
+import { setModeUpdateCallback } from './sidebarHelpers/ModeUpdateCallback';
 import Polygon from './mapHelpers/Polygons';
 
 
@@ -171,7 +171,7 @@ function Map() {
   };
 
   return <div id="map" className="mazemap"></div>;
-};
+}
 
 document.addEventListener('keydown', (event) => handleKeyDown(event, markers, regions));
 

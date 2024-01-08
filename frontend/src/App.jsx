@@ -1,4 +1,3 @@
-import React from 'react';
 import SideBar from './SideBar';
 import Map from './Map';
 import Modal from './Modal';

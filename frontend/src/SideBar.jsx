@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import LocationButton from "./sidebarHelpers/LocationButton";
 import { setSidebarUpdateCallback } from "./mapHelpers/MapUtil";
 import { totalPoints } from "./sidebarHelpers/Points"
