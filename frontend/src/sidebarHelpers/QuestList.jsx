@@ -1,5 +1,29 @@
-import React from "react";
 import QuestData from "./QuestData";
+import PropTypes from 'prop-types';
+
+Quest.propTypes = {
+  questDetails: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    status: PropTypes.func.isRequired,
+    description: PropTypes.string.isRequired,
+    points: PropTypes.number.isRequired,
+    progress: PropTypes.func.isRequired,
+  }).isRequired,
+  visitedCount: PropTypes.shape({
+    restaurants: PropTypes.number,
+    cafes: PropTypes.number,
+    regions: PropTypes.number
+  }).isRequired
+};
+
+QuestList.propTypes = {
+  visitedCount: PropTypes.shape({
+    restaurants: PropTypes.number,
+    cafes: PropTypes.number,
+    regions: PropTypes.number
+  }).isRequired
+}
+
 
 // return a list of quest codes in order e.g. ["RES1","CA1","REG1",...]
 function questOrder(visitedCount) {

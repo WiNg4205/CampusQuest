@@ -1,16 +1,5 @@
-import React, { useState } from 'react';
-
-let modeUpdateCallback = null;
-
-export function setModeUpdateCallback(callback) {
-  modeUpdateCallback = callback;
-}
-
-function notifyModeUpdate(locationModeActive) {
-  if (modeUpdateCallback) {
-    modeUpdateCallback(locationModeActive);
-  }
-}
+import { useState } from 'react';
+import { notifyModeUpdate } from './ModeUpdateCallback';
 
 function LocationButton() {
   const [locationModeActive, setLocationModeActive] = useState(true);
